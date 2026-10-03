@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');@import 'tailwindcss';
+@theme {
+    --color-primary: #D8D0C3;
+    --color-primary-light: #f8f8f8;
+    --color-accent: #176742;
+    --color-dark: #142B21;
+    --color-accent-light: #DDEB9D;
+    --font-body: Geologica;
+    --font-display: Philosopher;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-primary);
+
+}
+
+
+@layer components {
+    .btn-primary {
+        @apply  rounded-md text-primary bg-accent py-3 px-12 text-lg md:py-1 md:px-6 hover:scale-110 hover:shadow-lg transition-all w-fit mx-auto;
+    }
+}
+
